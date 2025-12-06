@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>World Database Lookup</title>
+    <title>World Database Dashboard</title>
     <link rel="stylesheet" href="world.css">
-    <script src="world.js" type="text/javascript"></script>
+    <script src="world.js" type="text/javascript" defer></script>
 </head>
 <body>
     <header>
-        <h1>World Database Lookup</h1>
+        <h1>World Database Dashboard</h1>
     </header>
 
     <main>
         <div id="controls">
             <label for="country">Country:</label>
-            <input id="country" type="search" name="country" placeholder="Enter country">
-            <button id="lookup">Lookup</button>
+            <input id="country" type="search" name="country" placeholder="Enter country name">
+            <button id="lookup">Lookup Country</button>
+            <button id="lookup-cities">Lookup Cities</button>
+            <input type="text" id="table-search" placeholder="Filter table...">
         </div>
 
         <div id="result">
-            <!-- Countries or cities will appear here -->
+            <!-- Dynamic results will appear here -->
         </div>
     </main>
 </body>
 </html>
-
